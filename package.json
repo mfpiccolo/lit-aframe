@@ -1,0 +1,21 @@
+{
+  "name": "lit-aframe",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "description": "",
+  "dependencies": {
+    "aframe": "^0.9.2",
+    "haunted": "^4.6.3",
+    "lit-html": "^1.1.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "latest"
+  }
+}

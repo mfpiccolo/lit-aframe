@@ -7,7 +7,7 @@ const ToggleRotatingButton = virtual((toggleRotating, rotating) => {
   return html`
     <a-plane
       id="add-sphere"
-      position="0 -0.17 -2.2"
+      position="0 -0.153 -2.2"
       color="#0D4F8B"
       opacity="0.7"
       height="0.25"

@@ -1,3 +1,5 @@
+![lit-aframe Demo](lit-aframe.gif)
+
 # Install
 
 `yarn`

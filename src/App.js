@@ -22,6 +22,11 @@ const App = () => {
   }, 20)
 
   const addSphere = () => setPositions([...positions, randomPosition()])
+  const removeSphere = () => {
+    const newPositions = [...positions]
+    newPositions.splice(positions.length - 1)
+    setPositions(newPositions)
+  }
   const clearSpheres = () => setPositions([])
   const toggleRotating = () => setRotating(!rotating)
 
@@ -37,7 +42,14 @@ const App = () => {
         >
         </a-entity>
       </a-entity>
-      ${ButtonPannel(addSphere, clearSpheres, toggleRotating, rotating)}
+
+      ${ButtonPannel(
+        addSphere,
+        removeSphere,
+        clearSpheres,
+        toggleRotating,
+        rotating
+      )}
       ${Sky()} ${RotatingSpheres(positions, rotation)}
     </a-scene>
   `
